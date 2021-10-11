@@ -18,6 +18,7 @@ body {
     height: 100vh;
     background-color: $primary-bg;
     margin: auto;
+    max-width: 100%;
 }
 
 button {
@@ -51,6 +52,7 @@ header {
     background-image: url('/images/hero1.png');
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     min-height: rem(820px);
 }
@@ -59,6 +61,7 @@ header {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -77,6 +80,7 @@ header {
     display: flex;
     align-self: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
     max-width: rem(600px);
     width:100%;
 }
@@ -91,12 +95,14 @@ input {
     display: flex;
     justify-content: center;
     align-self: flex-end;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .navwrapper {
         max-width: max-content;
         display: flex;
+        flex-wrap: wrap;
         align-items: baseline;
         min-width: 70%;
 
@@ -126,6 +132,7 @@ input {
 
 .choose-us {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     flex-grow: 1;
     align-items: center;
@@ -204,7 +211,7 @@ input {
 .destinations {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 0;
     justify-content: center;
 
     &__spain1 {
@@ -257,7 +264,7 @@ input {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex-grow: 0;
     min-height: rem(730px);
 }
 
@@ -265,7 +272,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-grow: 1;
+    flex-grow: 0;
     max-width: 80%;
 
     & > :first-child {
