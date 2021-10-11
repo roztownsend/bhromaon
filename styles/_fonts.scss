@@ -60,3 +60,8 @@ nav a {
     color: #FFF;
     text-transform: uppercase;
 }
+
+nav a:hover, a:focus {
+    font-weight: bold;
+}
+
