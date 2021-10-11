@@ -5,3 +5,15 @@ $secondary-bg: #5474FD;
 $highlight-red: #FF6363;
 $highlight-blue: #00A2FF;
 $button-bg-blue: #496BFE;
+
+.red {
+    color: $highlight-red;
+}
+
+.light-blue {
+    color: $highlight-blue;
+}
+
+.quote-blue {
+    color: $secondary-bg;
+}
