@@ -155,8 +155,30 @@ input {
     }
 }
 
+// I figured out how to draw the curved lines with css here: stackoverflow.com/questions/20803489/draw-a-curve-with-css#27849638 
+
 .cta-chart {
     background-color: $primary-bg;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    padding-top: 7%;
+
+    > div {
+        text-align: center;
+    
+        i {
+            font-size: rem(48px);
+            }
+    }
+        
+    &__lines {
+        width: 30%; 
+        height: rem(100px);  
+        border: solid 1px #999;
+        border-color: #999 transparent transparent transparent;
+        border-radius: 50%/100px 100px 0 0;
+        margin: -4%;
+    }
 }
