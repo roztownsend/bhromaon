@@ -79,14 +79,13 @@ header {
     flex-wrap: wrap;
     align-self: center;
     justify-content: flex-end;
-    max-width: 60%;
-    width: 100%;
+    width: 60%;
 }
 
 // Is there a way to center the cursor on-input that doesn't require JS? I looked around but couldn't find anything...
 
 input {
-    min-width: 70%;
+    width: 70%;
     border:0;
     cursor: auto;
 
