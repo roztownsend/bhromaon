@@ -110,3 +110,37 @@ input {
             padding-left: 3%;
         }
     }
+
+// "Main Call-to-action/Choose-us" section
+
+.main-cta-copy {
+    background-image: url('/images/hero2.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: rem(820px);
+}
+
+.choose-us {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+
+    &__copy {
+        p {
+            padding-right: 2%;
+            font-family: $josefin;
+            line-height: rem(26px);
+        }
+    }
+}
+
+.cta-chart {
+    background-color: $primary-bg;
+    width: 100%;
+    display: flex;
+}
