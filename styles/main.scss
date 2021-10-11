@@ -2,15 +2,6 @@
 @import 'fonts';
 @import 'rem-to-px';
 
-@mixin booknow {
-    background: 
-    linear-gradient(40deg,
-    $button-bg-blue,
-    $button-bg-blue 40%,
-    $secondary-bg 41%,
-    $secondary-bg 100%);
-}
-
 // Document-wide elements
 
 body {
@@ -32,17 +23,22 @@ button {
 }
 
 .booknow {
-    @include booknow
-}
+    background: 
+    linear-gradient(40deg,
+    $button-bg-blue,
+    $button-bg-blue 40%,
+    $secondary-bg 41%,
+    $secondary-bg 100%);
 
-button a {
+    & a {
     color: #FFF;
     text-decoration: none;
+    }
 }
 
-button:hover, button:focus {
+.booknow:hover, :focus {
     text-decoration: none;
-    color: #FFF;
+    background: $highlight-red;
 }
 
 // Header elements
@@ -78,16 +74,32 @@ header {
     background-color: #FFF;
     border: 1px solid #FFF;
     display: flex;
+    flex-wrap: wrap;
     align-self: center;
     justify-content: flex-end;
-    flex-wrap: wrap;
-    max-width: rem(600px);
-    width:100%;
+    max-width: 60%;
+    width: 100%;
 }
+
+// Is there a way to center the cursor on-input that doesn't require JS? I looked around but couldn't find anything...
 
 input {
     min-width: 70%;
-    font-family: $josefin;
+    border:0;
+    cursor: auto;
+
+    &::placeholder {
+        text-align: center;
+    }
+
+    :active, input:focus {
+        color: $highlight-blue;
+        outline: none;
+    }
+}
+
+button[type=submit]:hover, :active {
+    background-color: $highlight-blue;
 }
 
 .headernav {
@@ -175,7 +187,6 @@ input {
 
 .cta-chart {
     display: flex;
-    max-width: 80%;
     padding-top: 3%;
     flex-direction: row;
     flex-grow: 0;
