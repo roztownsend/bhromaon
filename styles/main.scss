@@ -111,7 +111,9 @@ input {
         }
     }
 
-// "Main Call-to-action/Choose-us" section
+// Main elements
+
+// Call-to-action/Choose-us section
 
 .main-cta-copy {
     background-image: url('/images/hero2.png');
@@ -180,5 +182,50 @@ input {
         border-color: #999 transparent transparent transparent;
         border-radius: 50%/100px 100px 0 0;
         margin: -4%;
+    }
+}
+
+// Destinations section
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    &__spain1 {
+        background-image: url('/images/hero3.png');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: rem(700px);
+        height: 100%;
+    }
+
+    &__wrapper1 {
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__spain2 {
+        background-image: url('/images/hero4.png');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: rem(700px);
+        height: 100%;
+    }
+
+    &__wrapper2 {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__copy {
+        background-color: $primary-bg-opaque;
+        padding: 1%;
+        width: 40%;
+        flex-grow: 0;
     }
 }

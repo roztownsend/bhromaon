@@ -7,7 +7,7 @@ $josefin: "Josefin Sans", sans-serif;
 $aleo: "Aleo", serif;
 
 body, p {
-    font-family: $aleo;
+    font-family: $josefin;
     color: #FFF;
     font-size: 1rem;
 }
@@ -56,6 +56,7 @@ h2 {
 }
 
 nav a {
+    font-family: $aleo;
     text-decoration: none;
     color: #FFF;
     text-transform: uppercase;
