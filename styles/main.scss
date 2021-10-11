@@ -139,7 +139,9 @@ button[type=submit]:hover, button[type=submit]:active {
     background-image: url('/images/hero2.png');
     background-size: cover;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     min-height: rem(820px);
 }
@@ -240,7 +242,6 @@ button[type=submit]:hover, button[type=submit]:active {
         width: 70%;
         display: flex;
         justify-content: flex-start;
-        flex-grow:0;
     }
 
     &__spain2 {
