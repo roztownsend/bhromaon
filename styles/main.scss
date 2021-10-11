@@ -11,9 +11,13 @@
     $secondary-bg 100%);
 }
 
+// Document-wide elements
+
 body {
-    box-sizing: border-box;
-    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: $primary-bg;
 }
 
@@ -38,4 +42,46 @@ button a {
 button:hover, button:focus {
     text-decoration: none;
     color: #FFF;
+}
+
+// Header elements
+
+header {
+    text-align: center;
+    background-image: url('/images/hero1.png');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: rem(820px);
+}
+
+.search-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-box {
+    padding: 2%;
+}
+
+.search-box {
+    background-color: #FFF;
+    border: 1px solid #FFF;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    max-width: rem(600px);
+    width:100%;
+}
+
+input {
+    min-width: 70%;
+    font-family: $josefin;
+}
+
+
+.navwrapper {
+    background-color: $secondary-bg;
 }

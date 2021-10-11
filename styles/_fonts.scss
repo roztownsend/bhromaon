@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap');
 @import 'colors';
+@import 'rem-to-px';
 
 $josefin: "Josefin Sans", sans-serif;
 $aleo: "Aleo", serif;
@@ -19,3 +20,43 @@ h3 {
     font-family: $aleo; 
 }
 
+h1 {
+    font-size: rem(48px);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: rem(5px);
+    line-height: rem(26px);
+}
+
+h2 {
+    font-size: rem(22px);
+    font-weight: normal;
+    letter-spacing: rem(7px);
+}
+
+.scroll-down {
+    font-family: $josefin;
+    font-size: rem(14px);
+    letter-spacing: rem(3px);
+
+    a {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    a:active, a:hover {
+        color: $highlight-red;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: rows;
+}
+
+.header-logo {
+    font-family: $josefin;
+    text-transform: uppercase;
+    font-size: rem(24px);
+}
