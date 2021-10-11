@@ -81,7 +81,26 @@ input {
     font-family: $josefin;
 }
 
+.headernav {
+    background-color: $secondary-bg;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 .navwrapper {
-    background-color: $secondary-bg;
-}
+        max-width: max-content;
+        display: flex;
+        align-items: baseline;
+        min-width: 70%;
+
+        nav {
+            flex-grow: 1;
+        } 
+        
+        li {
+            display: inline;
+            list-style: none;
+            padding-left: 3%;
+        }
+    }
