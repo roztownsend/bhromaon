@@ -1,6 +1,8 @@
 
-@import 'fonts';
 @import 'rem-to-px';
+@import 'fonts';
+@import 'mqs';
+@import 'navbar';
 
 // Document-wide elements
 
@@ -190,7 +192,7 @@ button[type=submit]:hover, button[type=submit]:active {
     display: flex;
     padding-top: 3%;
     flex-direction: row;
-    flex-grow: 0;
+    flex-shrink: 1;
 
     > div {
         text-align: center;

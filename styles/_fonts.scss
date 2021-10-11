@@ -21,11 +21,6 @@ h1, h4, h5 {
     text-transform: uppercase;
 }
 
-h3 {
-    font-family: $aleo;
-    font-size: rem(36px);
-}
-
 h1 {
     font-size: rem(48px);
     font-weight: bold;
@@ -37,6 +32,11 @@ h2 {
     font-size: rem(22px);
     font-weight: normal;
     letter-spacing: rem(7px);
+}
+
+h3 {
+    font-family: $aleo;
+    font-size: rem(36px);
 }
 
 h5 {
