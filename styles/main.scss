@@ -288,6 +288,7 @@ button[type=submit]:hover, button[type=submit]:active {
     justify-content: center;
     flex-grow: 0;
     max-width: 80%;
+    max-height: min-content;
 
     & > :first-child {
         padding-bottom: 5%;
