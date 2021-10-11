@@ -91,14 +91,15 @@ input {
     &::placeholder {
         text-align: center;
     }
-
-    :active, input:focus {
-        color: $highlight-blue;
-        outline: none;
-    }
 }
 
-button[type=submit]:hover, :active {
+.search:active, .search:focus {
+        color: $highlight-blue;
+        background-color: #FFF;
+        outline: none;
+}
+
+button[type=submit]:hover, button[type=submit]:active {
     background-color: $highlight-blue;
 }
 
