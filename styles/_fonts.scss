@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap');
+@import 'colors';
+
+$josefin: "Josefin Sans", sans-serif;
+$aleo: "Aleo", serif;
+
+a {
+    text-decoration: none;
+    color: $highlight-blue;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: $highlight-red;
+}
+
+body, p {
+    color: #FFF;
+    font-size: 1rem;
+}
+
+h1, h2, h4 {
+    font-family: $josefin;
+}
+
+h3 {
+    font-family: $aleo; 
+}

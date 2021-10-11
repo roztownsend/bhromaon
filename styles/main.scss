@@ -1,0 +1,31 @@
+
+@import 'fonts';
+@import 'rem-to-px';
+
+body {
+    box-sizing: border-box;
+    margin: auto;
+    background-color: $primary-bg;
+}
+
+button {
+    border: 0;
+    background: 
+        linear-gradient(40deg,
+        $button-bg-blue,
+        $button-bg-blue 40%,
+        $secondary-bg 41%,
+        $secondary-bg 100%);
+    text-transform: uppercase;
+    min-height: rem(42px);
+    min-width: rem(42px);
+    padding: 1%;
+}
+
+.red {
+    color: $highlight-red;
+}
+
+.light-blue {
+    color: $highlight-blue;
+}
