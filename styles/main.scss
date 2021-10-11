@@ -28,6 +28,7 @@ button {
     min-height: rem(42px);
     padding: 1% 3% 1% 3%;
     color: #FFF;
+    font-family: $aleo;
 }
 
 .booknow {
@@ -227,5 +228,7 @@ input {
         padding: 1%;
         width: 40%;
         flex-grow: 0;
+        padding: 3%;
     }
 }
+

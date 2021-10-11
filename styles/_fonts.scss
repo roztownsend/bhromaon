@@ -16,6 +16,10 @@ h1, h2, h4, h5 {
     font-family: $josefin;
 }
 
+h1, h4 {
+    text-transform: uppercase;
+}
+
 h3 {
     font-family: $aleo; 
 }
@@ -23,7 +27,6 @@ h3 {
 h1 {
     font-size: rem(48px);
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: rem(5px);
     line-height: rem(26px);
 }
@@ -64,4 +67,9 @@ nav a {
 
 nav a:hover, a:focus {
     font-weight: bold;
+}
+
+.destinations__copy {
+    font-size: 1rem;
+    line-height: rem(26px);
 }
