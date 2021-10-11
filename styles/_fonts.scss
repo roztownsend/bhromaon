@@ -10,6 +10,7 @@ body, p {
     font-family: $josefin;
     color: #FFF;
     font-size: 1rem;
+    line-height: rem(26px);
 }
 
 h1, h2, h4, h5 {
@@ -21,7 +22,8 @@ h1, h4 {
 }
 
 h3 {
-    font-family: $aleo; 
+    font-family: $aleo;
+    font-size: rem(36px);
 }
 
 h1 {
@@ -67,9 +69,4 @@ nav a {
 
 nav a:hover, a:focus {
     font-weight: bold;
-}
-
-.destinations__copy {
-    font-size: 1rem;
-    line-height: rem(26px);
 }
